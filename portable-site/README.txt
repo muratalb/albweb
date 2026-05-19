@@ -2,9 +2,10 @@ Alb Enerji tek sayfa prototip (portable)
 
 Kullanım:
 1) portable-site klasörünü bilgisayarınıza kopyalayın.
-2) Sadece index.html dosyasına çift tıklayın.
-3) Site tarayıcıda direkt açılır (kurulum gerektirmez).
+2) index.html dosyasına çift tıklayın.
+3) Site kurulum gerektirmeden açılır.
 
-Not:
-- Bu sürüm, "çift tıkla aç" için vanilla HTML/CSS/JS olarak hazırlandı.
-- İsterseniz görselleri aynı klasöre koyup index.html içinde kolayca değiştirebilirsiniz.
+Bu sürümde:
+- Gerçek görseller eklendi (logo/panel/frame/factory)
+- Animasyonlar güçlendirildi (reveal + parallax + tilt + hero zoom)
+- 2. section tasarımı güçlendirildi (kart tabanlı güçlü anlatım)

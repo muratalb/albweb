@@ -6,22 +6,20 @@
   <title>Alb Enerji — Engineered Against Stress</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="logo">alb enerji</div>
+    <img class="logo" src="https://images2.imgbox.com/2f/c9/9QqQqY9F_o.png" alt="alb enerji"/>
     <nav>
-      <a href="#technology">Technology</a>
-      <a href="#factory">Factory</a>
-      <a href="#contact">Contact</a>
+      <a href="#technology">Technology</a><a href="#factory">Factory</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-glow"></div>
-    <div class="panel-visual"></div>
+    <img class="hero-bg" src="https://images2.imgbox.com/8f/ea/67nTn0vQ_o.jpg" alt="panel texture"/>
+    <div class="hero-overlay"></div>
     <div class="hero-content reveal">
       <p class="eyebrow">Premium Engineering Solar Technology</p>
       <h1>Engineered Against Stress.</h1>
@@ -30,21 +28,28 @@
     </div>
   </section>
 
-  <section id="story" class="story">
-    <p class="reveal">Stress accumulates.</p>
-    <p class="reveal">Heat builds.</p>
-    <p class="reveal">Microcracks grow.</p>
-    <p class="reveal">Materials fatigue.</p>
-    <p class="reveal">Performance drifts.</p>
-    <p class="reveal">We engineer against it.</p>
+  <section id="story" class="story-strong">
+    <div class="story-head reveal">
+      <p class="eyebrow">Failure physics over time</p>
+      <h2>Stress is not an event.<br>It is accumulation.</h2>
+    </div>
+    <div class="story-grid">
+      <article class="story-card reveal"><span>01</span><h3>Stress accumulates.</h3><p>Minute strain compounds across thermal cycles and load transitions.</p></article>
+      <article class="story-card reveal"><span>02</span><h3>Heat builds.</h3><p>Temperature gradients amplify internal mismatch over long operation.</p></article>
+      <article class="story-card reveal"><span>03</span><h3>Microcracks grow.</h3><p>Small defects propagate when stress pathways remain unmanaged.</p></article>
+      <article class="story-card reveal"><span>04</span><h3>Materials fatigue.</h3><p>Interfaces lose consistency, reducing system calmness and endurance.</p></article>
+      <article class="story-card reveal"><span>05</span><h3>Performance drifts.</h3><p>Output character deviates from initial behavior without disciplined design.</p></article>
+      <article class="story-card accent reveal"><span>06</span><h3>We engineer against it.</h3><p>Alb Enerji designs for low-stress behavior across the full product lifetime.</p></article>
+    </div>
   </section>
 
   <section class="product" id="product">
-    <div class="copy reveal">
-      <p class="eyebrow">Engineering Object Visualization</p>
-      <h2>Not just higher wattage.<br>Lower stress over time.</h2>
+    <div class="copy reveal"><p class="eyebrow">Engineering Object Visualization</p><h2>Not just higher wattage.<br>Lower stress over time.</h2></div>
+    <div class="product-wrap">
+      <img class="product-main" id="tiltCard" src="https://images2.imgbox.com/17/8a/Nfmq4f4S_o.png" alt="solar panel"/>
+      <img class="product-side parallax" data-speed="0.2" src="https://images2.imgbox.com/9e/41/0aWh2x8E_o.jpg" alt="panel frame detail"/>
+      <img class="product-side parallax" data-speed="0.35" src="https://images2.imgbox.com/5d/6f/YwFAKqb9_o.jpg" alt="metal frame detail"/>
     </div>
-    <div class="product-card" id="tiltCard"></div>
   </section>
 
   <section id="technology" class="technology">
@@ -58,19 +63,14 @@
   </section>
 
   <section id="factory" class="factory">
+    <img class="factory-bg" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=80" alt="factory"/>
     <div class="factory-overlay"></div>
-    <div class="factory-content reveal">
-      <p class="eyebrow">Precision Manufacturing Environment</p>
-      <h3>Controlled production. Stable output. Disciplined engineering.</h3>
-    </div>
+    <div class="factory-content reveal"><p class="eyebrow">Precision Manufacturing Environment</p><h3>Controlled production. Stable output. Disciplined engineering.</h3></div>
   </section>
 
   <section id="contact" class="cta reveal">
     <h3>Performance needs discipline.</h3>
-    <div class="cta-actions">
-      <button>Explore Products</button>
-      <button class="ghost">Contact Alb Enerji</button>
-    </div>
+    <div class="cta-actions"><button>Explore Products</button><button class="ghost">Contact Alb Enerji</button></div>
   </section>
 
   <script src="./script.js"></script>
