@@ -5,7 +5,7 @@ Kullanım:
 2) index.html dosyasına çift tıklayın.
 3) Site kurulum gerektirmeden açılır.
 
-Bu sürümde:
-- Gerçek görseller eklendi (logo/panel/frame/factory)
-- Animasyonlar güçlendirildi (reveal + parallax + tilt + hero zoom)
-- 2. section tasarımı güçlendirildi (kart tabanlı güçlü anlatım)
+Düzeltme:
+- Fotoğraflar görünmeme problemi giderildi.
+- Tüm görseller artık local `assets/` klasöründen yükleniyor (hotlink yok).
+- İnternet bağlantısı olmadan da açılır.

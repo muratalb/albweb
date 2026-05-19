@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'>
+<defs><linearGradient id='g' x1='0' x2='1'><stop stop-color='#0a0d13'/><stop offset='1' stop-color='#1b2230'/></linearGradient></defs>
+<rect width='1600' height='900' fill='url(#g)'/>
+<g stroke='#8f99a8' stroke-opacity='.25'>
+<path d='M200 0v900M300 0v900M400 0v900M500 0v900M600 0v900M700 0v900M800 0v900M900 0v900M1000 0v900M1100 0v900M1200 0v900M1300 0v900'/>
+</g></svg>
