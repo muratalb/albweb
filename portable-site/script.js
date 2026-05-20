@@ -1,3 +1,10 @@
+document.querySelectorAll('img[data-fallback]').forEach((img)=>{
+  img.addEventListener('error', ()=>{
+    const fb = img.dataset.fallback;
+    if (fb && img.src.indexOf(fb) === -1) img.src = fb;
+  }, { once: true });
+});
+
 const io = new IntersectionObserver((entries)=>entries.forEach((e)=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.24});
 document.querySelectorAll('.reveal').forEach((el)=>io.observe(el));
 
