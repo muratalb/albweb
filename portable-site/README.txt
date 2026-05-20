@@ -5,11 +5,13 @@ Kullanım:
 2) index.html dosyasına çift tıklayın.
 3) Site kurulum gerektirmeden açılır.
 
-Gerçek fotoğrafları kullanma:
-- Aşağıdaki dosyaları `portable-site/assets/` içine koyarsanız site doğrudan onları kullanır:
-  - user-hero.jpg
-  - user-panel-main.png
-  - user-detail-1.jpg
-  - user-detail-2.jpg
-  - user-factory.jpg
-- Bu dosyalar yoksa otomatik olarak mevcut local SVG fallback görsellerine döner.
+Temsili görseller (Apple-style koyu/cinematic):
+- hero.jpg
+- panel-main.png
+- detail-1.jpg
+- detail-2.jpg
+- factory.jpg
+
+Not:
+- Bu dosyalar yoksa otomatik olarak local SVG fallback görsellerine döner.
+- Section geçişlerinde derinlik animasyonu aktiftir; aynı temadaki bölümler derinleşerek, tema değişiminde akış aşağıya dönecek şekilde tasarlanmıştır.

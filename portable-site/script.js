@@ -8,9 +8,23 @@ document.querySelectorAll('img[data-fallback]').forEach((img)=>{
 const io = new IntersectionObserver((entries)=>entries.forEach((e)=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.24});
 document.querySelectorAll('.reveal').forEach((el)=>io.observe(el));
 
+const chapters = [...document.querySelectorAll('.chapter')];
+const chapterObserver = new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      chapters.forEach((c)=>c.classList.remove('depth-active','depth-pass'));
+      entry.target.classList.add('depth-active');
+      const i = chapters.indexOf(entry.target);
+      if (i > 0) chapters[i-1].classList.add('depth-pass');
+    }
+  })
+},{threshold:.52});
+chapters.forEach((ch)=>chapterObserver.observe(ch));
+
 const panel = document.getElementById('tiltCard');
 const parallaxEls = [...document.querySelectorAll('.parallax')];
 const onScroll = ()=>{
+  if(!panel) return;
   const vh = window.innerHeight;
   const r = panel.getBoundingClientRect();
   const p = Math.max(0,Math.min(1,(vh-r.top)/(vh+r.height)));
@@ -22,6 +36,7 @@ const onScroll = ()=>{
 };
 window.addEventListener('scroll', onScroll, { passive:true });
 window.addEventListener('mousemove', (e)=>{
+  if(!panel) return;
   const x = (e.clientX/window.innerWidth - .5) * 8;
   const y = (e.clientY/window.innerHeight - .5) * -8;
   panel.style.filter = `drop-shadow(${x}px ${y+30}px 70px rgba(0,0,0,.7))`;
