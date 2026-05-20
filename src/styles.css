@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { margin: 0; background: #050608; }
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 28%, rgba(87, 113, 148, 0.23), transparent 38%),
+    radial-gradient(circle at 20% 80%, rgba(125, 130, 140, 0.15), transparent 45%);
+}
+.bg-panel-texture {
+  background: linear-gradient(130deg, #0c0f14 0%, #15181d 35%, #090c12 100%);
+}
+.bg-panel-3d {
+  background:
+    linear-gradient(98deg, rgba(255,255,255,0.14), transparent 16%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 26px),
+    linear-gradient(180deg, #0b0e12 0%, #040507 100%);
+}
+.bg-factory {
+  background:
+    linear-gradient(transparent, rgba(0,0,0,.7)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 120px),
+    radial-gradient(circle at center, rgba(255,255,255,.07), transparent 60%);
+}
